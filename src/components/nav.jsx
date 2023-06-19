@@ -6,7 +6,7 @@ export default function Nav () {
     <nav className="bg-gradient-to-b from-[#324baa] to-[#4cabe4]">
       <NavLogin />
 
-      <div className="p-3 flex justify-center items-center text-white font-bold">
+      <div className="md:p-3 p-14 flex justify-center items-center text-white font-bold">
         <ul className="flex gap-5">
           <li>
             <NavLink 

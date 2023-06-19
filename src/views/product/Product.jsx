@@ -9,11 +9,11 @@ export default function Product () {
   const { product, isLoading } = useProduct(id)
 
   return (
-    <main className="min-h-screen p-20">
+    <main className="min-h-screen p-5 md:p-20">
       { 
         isLoading ? <Loading /> :(
           <div className="flex flex-col gap-10 justify-center items-center">
-            <div className="grid grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <PrincipalInfo
                 image={`https:${product.fields.image.fields.file.url}`}
                 name={product.fields.name}

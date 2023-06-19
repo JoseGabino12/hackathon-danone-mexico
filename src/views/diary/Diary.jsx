@@ -7,10 +7,10 @@ export default function Diary () {
   const { producstSearch, getProductsWithSearch, isLoading } = useProducts()
 
   return (
-    <main className="min-h-screen p-20">
+    <main className="min-h-screen p-5 md:p-20">
       <h1 className="font-bold text-2xl text-[#324baa] mb-5">Welcome to your diary!</h1>
 
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <CardLimit getProductsWithSearch={getProductsWithSearch} />
         {
           isLoading ? <Loading /> : <Results results={producstSearch} />

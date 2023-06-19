@@ -45,7 +45,7 @@ export default function CardLimit ({ getProductsWithSearch }) {
         <p>Remaining</p>
       </div>
 
-      <div className="p-8 w-full">
+      <div className="md:p-8 w-full">
         <TabIndex changeTab={changeTab} limit={limit} />
         <TabContent
           handleChange={handleChange}

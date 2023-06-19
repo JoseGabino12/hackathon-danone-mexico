@@ -17,7 +17,7 @@ export default function PrincipalInfo ({ name, image, description, nutriScore })
 
       <h2 className="text-xl font-semibold text-[#324baa]">{name}</h2>
 
-      <div className="flex flex-row gap-10">
+      <div className="flex flex-col md:flex-row gap-10">
         <p className="text-center w-80">{description}</p>
 
         <div className="flex flex-col justify-center items-center gap-3">

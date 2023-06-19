@@ -21,14 +21,14 @@ export default function Calories ({ calories }) {
       </div>
 
 
-      <div className="flex gap-10">
+      <div className="flex flex-col md:flex-row gap-10">
         <p>Breakfast: 200kcal</p>
         <p>Lunch: 200kcal</p>
         <p>Dinner: 200kcal</p>
         <p>Snacks: 200kcal</p>
       </div>
 
-      <Link to={'/diary'}>Changes calories</Link>
+      <Link to={'/diary'} className="border-2 border-[#324baa] p-3 rounded-md hover:bg-[#324baa] hover:text-white">Changes calories</Link>
     </div>
   )
 }

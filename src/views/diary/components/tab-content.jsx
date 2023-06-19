@@ -5,7 +5,7 @@ export default function TabContent ({
   energeticValue
 }) {
   return (
-    <div className="bg-white shadow border border-[#324BAA] p-8 text-[#324BAA] rounded-lg -mt-1.5 flex gap-5">
+    <div className="bg-white shadow border border-[#324BAA] p-5 md:p-8 text-[#324BAA] rounded-lg -mt-1.5 flex gap-2 md:gap-5">
       <input
         placeholder="Entry a calories"
         onChange={handleChange}

@@ -10,7 +10,7 @@ export default function NavLogin () {
 
   return (
     <div className="flex justify-between pt-5 px-5 text-white">
-      <img src={Logo} alt="Logo de Danone" className='w-auto h-20' />
+      <img src={Logo} alt="Logo de Danone" className='md:w-auto md:h-20 h-12' />
     {
       isLoading ?
       <div>

@@ -6,7 +6,7 @@ export default function User () {
   const { user, isLoading } = useUser()
 
   return (
-    <main className="min-h-screen p-20">
+    <main className="min-h-screen p-5 md:p-20">
       {
         isLoading ? <Loading /> :(
           <div className="flex flex-col gap-10 items-center">

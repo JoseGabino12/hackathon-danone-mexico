@@ -1,6 +1,6 @@
 export default function TabIndex ({ changeTab, limit }) {
   return (
-    <ul className="grid grid-flow-col text-center text-[#324BAA]  p-1">
+    <ul className="grid grid-flow-col text-center text-[#324BAA] p-1">
       <li>
         <button onClick={() => changeTab(1)} className={limit == 1 ? "flex justify-center bg-white rounded-tl-lg rounded-tr-lg border-l border-t border-r border-[#324BAA] p-4" : "flex justify-center p-4"}>
           Breakfast
