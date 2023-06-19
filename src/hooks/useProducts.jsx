@@ -9,7 +9,12 @@ export const useProducts = () => {
   const getProductsWithSearch = async (energeticValue) => {
     const newProducts = products.filter(product => product.fields.energeticValue <= energeticValue)
     setProductsSearch(newProducts)
-    console.log(energeticValue)
+    setIsLoading(false)
+  }
+
+  const searchProducts = async (search) => {
+    const newProducts = products.filter(product => product.fields.name.toLowerCase().includes(search.toLowerCase()))
+    setProductsSearch(newProducts)
     setIsLoading(false)
   }
 
@@ -23,5 +28,11 @@ export const useProducts = () => {
     getProducts()
   }, [])
   
-  return { products, isLoading, getProductsWithSearch, producstSearch }
+  return { 
+    products,
+    isLoading,
+    getProductsWithSearch,
+    producstSearch,
+    searchProducts
+  }
 }

@@ -16,7 +16,10 @@ export default function CardLimit ({ getProductsWithSearch }) {
   }
   
   const handleAdd = () => {
-    setTotalEnegeticValue(totalEnegeticValue + parseInt(energeticValue))
+    energeticValue === ''
+      ? setTotalEnegeticValue(totalEnegeticValue + 0)
+      : setTotalEnegeticValue(totalEnegeticValue + parseInt(energeticValue))
+      
     setEnergeticValue('')
   }
 
