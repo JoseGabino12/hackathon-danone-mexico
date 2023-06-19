@@ -25,6 +25,34 @@ Para que el proyecto funcione correctamente, se debe crear un archivo `.env.loca
   CONTENTFUL_ACCESS_TOKEN=
   ```
 
+## Contentful
+
+Para que el proyecto funcione correctamente, se debe crear un espacio en [Contentful](https://www.contentful.com/) y luego crear los siguientes tipos de contenido:
+
+- product
+- user
+
+Cada tipo de contenido debe tener los siguientes campos:
+
+### product
+
+- name (Short text)
+- description (Short text)
+- ingredients (Short text)
+- nutriscore (Short text)
+- products data (Short text, list)
+- nutritional information (JSON object)
+- energetic value (Integer)
+- image (Media)
+
+### user
+
+- username (Short text)
+- total calories (Integer)
+- foods (JSON object)
+- products (JSON object)
+- profile picture (Media)
+
 ## Ejecución
 
 Para ejecutar el proyecto, se debe ejecutar el siguiente comando:

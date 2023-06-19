@@ -3,7 +3,15 @@ import { client } from "../lib/client"
 
 export const useProducts = () => {
   const [products, setProducts] = useState([])
+  const [producstSearch, setProductsSearch] = useState([])
   const [isLoading, setIsLoading] = useState(true)
+
+  const getProductsWithSearch = async (energeticValue) => {
+    const newProducts = products.filter(product => product.fields.energeticValue <= energeticValue)
+    setProductsSearch(newProducts)
+    console.log(energeticValue)
+    setIsLoading(false)
+  }
 
   useEffect(() => {
     const getProducts = async () => {
@@ -14,6 +22,6 @@ export const useProducts = () => {
 
     getProducts()
   }, [])
-
-  return { products, isLoading }
+  
+  return { products, isLoading, getProductsWithSearch, producstSearch }
 }

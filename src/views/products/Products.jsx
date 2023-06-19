@@ -17,6 +17,7 @@ export default function Products () {
               id={product.sys.id}
               image={`https:${product.fields.image.fields.file.url}`}
               name={product.fields.name}
+              calories={product.fields.energeticValue}
             />
           ))
         }
